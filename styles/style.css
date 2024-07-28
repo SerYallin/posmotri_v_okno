@@ -170,7 +170,9 @@ input[type=text]:focus-visible {
 
 input[type=checkbox] + span {
   position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 19px;
   height: 19px;
   border: 1px solid #ffffff;
@@ -178,9 +180,6 @@ input[type=checkbox] + span {
 
 input[type=checkbox]:checked + span::before {
   content: "";
-  position: absolute;
-  inset: 1px;
-  display: block;
   width: 15px;
   height: 15px;
   background-color: #ffffff;
